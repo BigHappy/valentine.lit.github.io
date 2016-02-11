@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+    width: 100%;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+    text-align: center;
+    background-color: #B7655D;
+    color: #FCFCFC;
+}
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.happy{
+    margin-top: 75px;
+    font-size: 15rem;
+}
+.valentine{
+    margin-top: 75px;
+    font-size: 15rem;
+}
+.title{
+    height: 250px;
+    margin-top: 75px;
+    font-size: 15rem;
+}
+.img{
+    margin: 160px auto 0;
+    width: 480px;
+    height: 250px;
+    background-image: url(../images/characterimg.png)
+}
+.from{
+    margin-top: 90px;
+    font-size: 15rem;
+}
+
+.d-img{
+    margin-top: 120px;
+}
+.daifuku{
+    margin-top: 20px;
+    font-size: 15rem;
+    color: #FCFCFC;
+}
+.k-img{
+    margin-top: 90px;
+}
+.kako{
+    margin-top: 20px;
+    font-size: 15rem;
+    color: #FCFCFC;
+}
+
+.v-img{
+    margin-top: 90px;
+}
+.vaio{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 15rem;
+    color: #FCFCFC;
+}
+
+#animation {
+    color: #FCFCFC;
+}
+.fadeInDown2 {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInDown2;
+ animation-name: fadeInDown2;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown2 {
+ 0% { opacity: 0; -webkit-transform: translateY(40px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown2 {
+ 0% { opacity: 0; -webkit-transform: translateY(40px); -ms-transform: translateY(40px); transform: translateY(40px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-40px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-40px); -ms-transform: translateY(-40px); transform: translateY(-40px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+/* 雛形の作成方法　まずヘッダー、フッター、ヒーロー画像はwidthを100%にしておく */
+/* 次に、mainとsubとそれを覆う.containerにwidthの値を入れてあげる */
+/* .containerにoverflow:hiddenを指定して、marginの左右をautoにする　で、上下のmarginも忘れないこと */
+/* .mainと.subにmargin:leftを適応 .mainは時たまブラウザによっては、display:blockにしないと具合が悪いことがあるので注意しよう */
+/* で全てにborderと背景の色を設定する */
+/* 一時的にheaderとfooter　mainとsubに高さを指定してあげる　じゃないと、まだ要素がないので、ただの線が表示されるだけになってしまう　ここは、中身の要素数によって高さが変わるように可変なものにしておきたい*/
